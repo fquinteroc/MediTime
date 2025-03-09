@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { ResetPasswordComponent } from './auth/reset-password/reset-password.component';
 import { ConfirmResetComponent } from './auth/confirm-reset/confirm-reset.component';
+import { NewPasswordComponent } from './auth/new-password/new-password.component';
 
 export const routes: Routes = [
     {
@@ -15,5 +16,9 @@ export const routes: Routes = [
     {
         path: 'confirm-reset',
         component: ConfirmResetComponent
+    },
+    {
+        path: 'new-password',
+        component: NewPasswordComponent
     }
 ];
