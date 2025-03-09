@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -14,7 +15,14 @@ export class LoginComponent {
   password: string = '';
   rememberMe: boolean = false;
 
+  constructor(private router: Router) {}
+
   login() {
     alert(`Usuario: ${this.username}\nContraseña: ${this.password}\nRecordar: ${this.rememberMe}`);
+
+  }
+
+  goToResetPassword() {
+    this.router.navigate(['/reset-password']);
   }
 }

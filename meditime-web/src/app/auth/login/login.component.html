@@ -30,12 +30,12 @@
               <input type="checkbox" [(ngModel)]="rememberMe" />
               Guardar contraseña
             </label>
-            <a href="#">¿Has olvidado tu contraseña?</a>
-          </div>
+            <a href="#" (click)="goToResetPassword(); $event.preventDefault()">¿Has olvidado tu contraseña?</a>
+          </div>          
 
           <div class="signup">
             <span>¿Aún no tienes cuenta?</span>
-            <a href="#">Crear Cuenta</a>
+            <a href="#" >Crear Cuenta</a>
           </div>
         </div>
       </div>

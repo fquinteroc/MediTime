@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-confirm-reset',
@@ -12,7 +13,7 @@ export class ConfirmResetComponent implements OnInit {
   interval: any;
   emailSentMessage: string = 'El correo electrónico se ha enviado correctamente.';
   
-  constructor() { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
   }
@@ -33,6 +34,7 @@ export class ConfirmResetComponent implements OnInit {
     const verificationCode = this.code.join('');
       console.log('Código enviado');
       alert('Código enviado correctamente');
+    this.router.navigate(['/new-password']);
   }
 
   resendCode() {

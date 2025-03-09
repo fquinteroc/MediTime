@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-password',
@@ -14,27 +15,12 @@ export class NewPasswordComponent {
   successMessage: string | null = null;
   errorMessage: string | null = null;
 
+  constructor(private router: Router) {}
+
   resetPassword() {
-    if (!this.newPassword || !this.confirmPassword) {
-      this.errorMessage = 'Por favor, completa todos los campos.';
-      this.successMessage = null;
-      return;
-    }
-
-    if (this.newPassword !== this.confirmPassword) {
-      this.errorMessage = 'Las contraseñas no coinciden.';
-      this.successMessage = null;
-      return;
-    }
-
-    if (this.newPassword.length < 8) {
-      this.errorMessage = 'La contraseña debe tener al menos 8 caracteres.';
-      this.successMessage = null;
-      return;
-    }
-
     this.successMessage = '¡Contraseña restablecida correctamente!';
-    this.errorMessage = null;
-    console.log('Nueva contraseña:', this.newPassword);
+    // this.errorMessage = null;
+    // console.log('Nueva contraseña:', this.newPassword);
+    this.router.navigate(['/']);
   }
 }
