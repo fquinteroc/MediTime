@@ -1,0 +1,48 @@
+<div class="login-wrapper">
+  <div class="login-container">
+    <div class="login-left">
+      <div class="login-content">
+        <img src="/images/logo.png" alt="Pills Icon" class="pills-icon" />
+        <h1>¡Bienvenido a MediTime!</h1>
+        <p>
+          Inicia sesión o regístrate para administrar la medicación de tus pacientes
+          de forma sencilla y segura.
+        </p>
+
+        <div class="login-form">
+          <input
+            type="text"
+            id="username"
+            placeholder="Usuario"
+            [(ngModel)]="username"
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+            [(ngModel)]="password"
+          />
+
+          <button (click)="login()">Ingresar</button>
+
+          <div class="extra-options">
+            <label>
+              <input type="checkbox" [(ngModel)]="rememberMe" />
+              Guardar contraseña
+            </label>
+            <a href="#">¿Has olvidado tu contraseña?</a>
+          </div>
+
+          <div class="signup">
+            <span>¿Aún no tienes cuenta?</span>
+            <a href="#">Crear Cuenta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-right">
+      <img src="/images/FotoMediTime.png" alt="Nurse with patient" />
+    </div>
+  </div>
+</div>
