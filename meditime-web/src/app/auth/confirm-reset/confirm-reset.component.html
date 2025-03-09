@@ -1,0 +1,36 @@
+<div class="verification-wrapper">
+  <div class="verification-container">
+    <div class="verification-left">
+      <div class="verification-content">
+        <img src="/images/logo.png" alt="Pills Icon" class="pills-icon" />
+        <h1>Código de Verificación</h1>
+        <p>
+          Introduzca el código de verificación que acabamos de enviarle a su dirección de correo electrónico.
+        </p>
+
+        <span class="email-sent">  
+          <strong>El correo electrónico se ha enviado correctamente.</strong>
+        </span>
+
+        <div class="code-inputs">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+        </div>
+
+        <p class="resend-timer">
+          El correo electrónico se reenviará en <span>0:58</span>
+        </p>
+
+        <button (click)="verifyCode()">Enviar Código</button>
+      </div>
+    </div>
+
+    <div class="verification-right">
+      <img src="/images/FotoMediTime.png" alt="Nurse with patient" />
+    </div>
+  </div>
+</div>
