@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.new-account-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.new-account-container {
+    display: flex;
+    width: 900px;
+    min-height: 600px;
+    font-family: Arial, sans-serif;
+}
+
+.new-account-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-account-content {
+    width: 320px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.google-btn {
+    background-color: #10B981;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+
+.separator {
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
+.new-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.new-account-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.new-account-form button {
+    background-color: #2563EB;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-account-form button:hover {
+    background-color: #1669c1;
+}
+
+.success-message {
+    color: #4caf50;
+    font-size: 0.9rem;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 0.9rem;
+}
+
+.login-link {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.login-link span {
+    color: #1a73e8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.new-account-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-account-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}

@@ -1,0 +1,63 @@
+<div class="new-account-wrapper">
+  <div class="new-account-container">
+    <div class="new-account-left">
+      <div class="new-account-content">
+        <h1>¡Bienvenido a MediTime!</h1>
+        <p>Crea una cuenta para gestionar los medicamentos de tus pacientes</p>
+
+        <button class="google-btn">
+          <img src="/icons/google.png" alt="Google Icon" />
+          Continue with Google
+        </button>
+
+        <div class="separator">o</div>
+
+        <div class="new-account-form">
+          <input
+            type="email"
+            placeholder="Correo Electrónico"
+            [(ngModel)]="email"
+          />
+          <input
+            type="text"
+            placeholder="Nombre Completo"
+            [(ngModel)]="fullName"
+          />
+          <input
+            type="tel"
+            placeholder="Teléfono"
+            [(ngModel)]="phone"
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            [(ngModel)]="password"
+          />
+          <input
+            type="password"
+            placeholder="Confirmar Contraseña"
+            [(ngModel)]="confirmPassword"
+          />
+
+          <button (click)="createAccount()">Crear Cuenta</button>
+        </div>
+
+        <div *ngIf="successMessage" class="success-message">
+          {{ successMessage }}
+        </div>
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
+
+        <p class="login-link">
+          ¿Ya tienes cuenta? 
+          <span (click)="login()">Ingresar</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="new-account-right">
+      <img src="/images/FotoMediTime.png" alt="Nurse with patient" />
+    </div>
+  </div>
+</div>
