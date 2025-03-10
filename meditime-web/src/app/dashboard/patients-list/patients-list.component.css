@@ -131,21 +131,21 @@ nav {
 }
 
 .filter-btn {
-  background-color: #2ecc71;
+  background-color: #10B981;
   color: #fff;
 }
 
 .filter-btn:hover {
-  background-color: #27ae60;
+  background-color: #059669;
 }
 
 .add-btn {
-  background-color: #3366ff;
+  background-color: #2563EB;
   color: #fff;
 }
 
 .add-btn:hover {
-  background-color: #254edb;
+  background-color: #1D4ED8;
 }
 
 input[type="text"] {
@@ -220,14 +220,15 @@ tr:hover {
 }
 
 .view-btn {
-  background-color: #27ae60;
+  background-color: #10B981;
 }
 
 .view-btn:hover {
-  background-color: #219150;
+  background-color: #059669;
 }
 
 .pagination {
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -239,7 +240,7 @@ tr:hover {
 }
 
 .prev-btn, .next-btn {
-  background-color: #27ae60;
+  background-color: #10B981;
   color: white;
   padding: 10px 16px;
   border: none;

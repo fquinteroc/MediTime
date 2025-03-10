@@ -45,7 +45,12 @@
       </thead>
       <tbody>
         <tr *ngFor="let patient of patients">
-          <td>{{ patient.name }}</td>
+          <td>
+            <div class="patient-info">
+              <i class="fas fa-user-circle patient-icon"></i>
+              {{ patient.name }}
+            </div>
+          </td>
           <td>{{ patient.age }}</td>
           <td>{{ patient.diagnosis }}</td>
           <td class="actions">
@@ -61,7 +66,7 @@
           </td>
         </tr>
       </tbody>
-    </table>
+    </table>    
 
     <!-- Paginación -->
     <div class="pagination">
