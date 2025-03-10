@@ -18,7 +18,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   login() {
-    alert(`Usuario: ${this.username}\nContraseña: ${this.password}\nRecordar: ${this.rememberMe}`);
+    this.router.navigate(['/patients-list']);
 
   }
 
