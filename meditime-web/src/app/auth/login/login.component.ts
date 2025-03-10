@@ -25,4 +25,8 @@ export class LoginComponent {
   goToResetPassword() {
     this.router.navigate(['/reset-password']);
   }
+
+  goToCreateAccount() {
+    this.router.navigate(['/new-account']);
+  }
 }
