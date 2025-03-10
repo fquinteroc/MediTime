@@ -1,0 +1,73 @@
+<div class="patients-wrapper">
+  <!-- Barra lateral -->
+  <aside class="sidebar">
+    <h2>Cuidador</h2>
+    <nav>
+      <button class="nav-item active">
+        <i class="fas fa-users icon"></i> Pacientes
+      </button>
+      <button class="nav-item">
+        <i class="fas fa-file-alt icon"></i> Informes Pacientes
+      </button>
+    </nav>
+
+    <button class="logout-btn">
+      <i class="fas fa-sign-out-alt icon"></i> Cerrar Sesión
+    </button>
+  </aside>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <div class="header">
+      <button class="filter-btn">
+        <i class="fas fa-filter"></i> Filtros
+      </button>
+      <button class="add-btn" (click)="addPatient()">
+        <i class="fas fa-plus"></i> Agregar Paciente
+      </button>
+      <input 
+        type="text" 
+        placeholder="Buscar Paciente"
+        [(ngModel)]="searchTerm"
+        (input)="searchPatients()" 
+      />
+    </div>
+
+    <!-- Tabla -->
+    <table>
+      <thead>
+        <tr>
+          <th>Paciente</th>
+          <th>Edad</th>
+          <th>Diagnóstico</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td>{{ patient.name }}</td>
+          <td>{{ patient.age }}</td>
+          <td>{{ patient.diagnosis }}</td>
+          <td class="actions">
+            <button class="delete-btn" (click)="deletePatient(patient)">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="edit-btn" (click)="editPatient(patient)">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="view-btn" (click)="viewPatient(patient)">
+              <i class="fas fa-eye"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Paginación -->
+    <div class="pagination">
+      <button class="prev-btn" (click)="previousPage()">Previo</button>
+      <span>Página {{ currentPage }} de {{ totalPages }}</span>
+      <button class="next-btn" (click)="nextPage()">Siguiente</button>
+    </div>
+  </div>
+</div>

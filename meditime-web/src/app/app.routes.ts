@@ -4,6 +4,7 @@ import { ResetPasswordComponent } from './auth/reset-password/reset-password.com
 import { ConfirmResetComponent } from './auth/confirm-reset/confirm-reset.component';
 import { NewPasswordComponent } from './auth/new-password/new-password.component';
 import { NewAccountComponent } from './auth/new-account/new-account.component';
+import { PatientsListComponent } from './dashboard/patients-list/patients-list.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path: 'new-account',
         component: NewAccountComponent
+    },
+    {
+        path: 'patients-list',
+        component: PatientsListComponent
     }
 ];
