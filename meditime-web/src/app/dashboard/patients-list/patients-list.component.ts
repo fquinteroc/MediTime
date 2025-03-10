@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 interface Patient {
   name: string;
@@ -33,7 +34,7 @@ export class PatientsListComponent implements OnInit {
   currentPage: number = 1;
   totalPages: number = 10;
 
-  constructor() {}
+  constructor(private router: Router) {} 
 
   ngOnInit(): void {}
 
@@ -66,6 +67,10 @@ export class PatientsListComponent implements OnInit {
     if (this.currentPage < this.totalPages) {
       this.currentPage++;
     }
+  }
+
+  logout() {
+    this.router.navigate(['/']);
   }
 
   previousPage() {
