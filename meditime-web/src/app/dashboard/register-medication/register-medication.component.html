@@ -1,45 +1,47 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+<div class="register-medication-wrapper">
+  <aside class="sidebar">
+    <h2>Cuidador</h2>
+    <nav>
+      <button class="nav-item active">
+        <i class="fas fa-users icon"></i> Pacientes
+      </button>
+      <button class="nav-item">
+        <i class="fas fa-file-alt icon"></i> Informes Pacientes
+      </button>
+    </nav>
 
-@Component({
-imports: [CommonModule, ReactiveFormsModule],
-standalone: true,
-selector: 'app-register-medication',
-templateUrl: './register-medication.component.html',
-styleUrls: ['./register-medication.component.css']
-})
-export class RegisterMedicationComponent {
-medicationForm: FormGroup;
+    <button class="logout-btn" (click)="cancel()">
+      <i class="fas fa-sign-out-alt icon"></i> Cerrar Sesión
+    </button>
+  </aside>
 
-constructor(private fb: FormBuilder, private router: Router) {
-this.medicationForm = this.fb.group({
-medicationName: ['', Validators.required],
-concentration: ['', Validators.required],
-dose: ['', Validators.required],
-startDate: ['', Validators.required],
-endDate: ['', Validators.required],
-frequency: ['', Validators.required],
-administrationRoute: ['', Validators.required],
-});
-}
+  <div class="content">
+    <div class="form-header">
+      <h1>Registrar Medicamentos: <span class="patient-name">José Ramírez</span></h1>
+    </div>
 
-submitForm() {
-if (this.medicationForm.valid) {
-this.router.navigate(['/medication-list']);
-}
-}
+    <form [formGroup]="medicationForm" (ngSubmit)="submitForm()" class="medication-form">
+      <input type="text" formControlName="medicationName" placeholder="Nombre Medicamento" />
+      <input type="text" formControlName="concentration" placeholder="Concentración/Presentación" />
+      <input type="text" formControlName="dose" placeholder="Dosis a Administración" />
 
-cancel() {
-console.log('Cancelado');
-this.router.navigate(['/medication-list']);
-}
+      <div class="input-wrapper">
+        <input type="date" formControlName="startDate" id="startDate" required />
+        <label for="startDate">Fecha Inicio Tratamiento</label>
+      </div>
 
-save() {
-console.log('Guardado');
-this.router.navigate(['/medication-list']);
-}
+      <div class="input-wrapper">
+        <input type="date" formControlName="endDate" id="endDate" required />
+        <label for="endDate">Fecha Fin Tratamiento</label>
+      </div>
 
-}
+      <input type="text" formControlName="frequency" placeholder="Horas de Toma" />
+      <input type="text" formControlName="administrationRoute" placeholder="Vía Administración" />
+
+      <div class="form-actions">
+        <button type="submit" class="primary-btn"  (click)="save()">Guardar</button>
+        <button type="button" class="cancel-btn" (click)="cancel()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
