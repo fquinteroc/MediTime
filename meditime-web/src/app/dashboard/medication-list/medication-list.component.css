@@ -1,0 +1,224 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.medication-list-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.nav-item {
+  background: none;
+  color: white;
+  border: none;
+  padding: 12px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item:hover {
+  background-color: #444;
+}
+
+.nav-item.active {
+  background-color: #444;
+}
+
+.icon {
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.content {
+  padding: 40px;
+  width: calc(100% - 270px);
+  margin-left: 270px;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+}
+
+.medication-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.medication-header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+
+.patient-name {
+  color: #000;
+}
+
+.medication-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.status {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.edit-btn:hover {
+  background-color: #e67e22;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back-btn {
+  background-color: #6b7280;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.back-btn:hover {
+  background-color: #4b5563;
+}
+
+.primary-btn {
+  background-color: #2563EB;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #1D4ED8;
+}
