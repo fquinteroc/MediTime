@@ -1,0 +1,46 @@
+<div class="patient-detail-wrapper">
+  <aside class="sidebar">
+    <h2>Cuidador</h2>
+    <nav>
+      <button class="nav-item active">
+        <i class="fas fa-users icon"></i> Pacientes
+      </button>
+      <button class="nav-item">
+        <i class="fas fa-file-alt icon"></i> Informes Pacientes
+      </button>
+    </nav>
+
+    <button class="logout-btn" (click)="logout()">
+      <i class="fas fa-sign-out-alt icon"></i> Cerrar Sesión
+    </button>
+  </aside>
+
+  <div class="content">
+    <div class="patient-header">
+      <h1>{{ patientName }}</h1>
+      <button class="back-btn" (click)="goBack()">Volver Listado Pacientes</button>
+    </div>
+
+    <div class="detail-cards">
+      <div class="detail-card">
+        <h2>Estado Adherencia al Tratamiento</h2>
+        <img src="/images/chart.png" alt="Estado Adherencia">
+      </div>
+
+      <div class="detail-card">
+        <p>Adherencia al Tratamiento = {{ adherencePercentage }}%</p>
+        <button class="primary-btn" (click)="generateReport()">Generar Reporte</button>
+      </div>
+
+      <div class="detail-card">
+        <h2>Alertas y Omisiones</h2>
+        <img src="/images/piechart.png" alt="Alertas y Omisiones">
+      </div>
+
+      <div class="detail-card">
+        <button class="primary-btn" (click)="viewMedicationList()">Lista Medicamentos Asignados</button>
+        <button class="primary-btn" (click)="registerMedication()">Registrar Medicamentos Paciente</button>
+      </div>
+    </div>
+  </div>
+</div>
