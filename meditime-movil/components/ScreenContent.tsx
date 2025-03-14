@@ -42,7 +42,7 @@ export const ScreenContent = () => {
             </View>
             <TabNavigator/>
 
-            <ConfirmReminderModal isOpen={showModal} onClose={() => setShowModal(false)}/>
+
         </Container>
     );
 };
