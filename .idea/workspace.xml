@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="502f45b9-8ed9-4fa5-977e-90ce06aab126" name="Changes" comment="Meditime movil">
+      <change beforePath="$PROJECT_DIR$/meditime-movil/components/Reminder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/Reminder.tsx" afterDir="false" />
+    </list>
+    <list id="42d05178-39fa-4859-bf0c-d36e2f0bebef" name="Changes by Saturno" comment="Ajustes finales movil modal confirmar">
+      <change beforePath="$PROJECT_DIR$/meditime-movil/components/ScreenContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/ScreenContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meditime-movil/modals/ConfirmReminderModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/modals/ConfirmReminderModal.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2uC1xXDG1d39T2gLNphgVcS2vtD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/dannamilenacoral/Desktop/MAESTRIA UNIANDES/UX/MediTime",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/dannamilenacoral/Library/Application Support/JetBrains/WebStorm2024.3/node/versions/20.19.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "npm.ios.executor": "Run",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "/Users/dannamilenacoral/Desktop/MAESTRIA UNIANDES/UX/MediTime/meditime-movil/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/meditime-movil" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="ios" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/meditime-movil/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ios" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/meditime-movil/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.ios" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="502f45b9-8ed9-4fa5-977e-90ce06aab126" name="Changes" comment="" />
+      <created>1741737988910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741737988910</updated>
+      <workItem from="1741737990174" duration="1752000" />
+      <workItem from="1741740372623" duration="1181000" />
+      <workItem from="1741871042889" duration="308000" />
+      <workItem from="1741871421219" duration="1360000" />
+      <workItem from="1741873370744" duration="2994000" />
+      <workItem from="1741895343165" duration="3463000" />
+      <workItem from="1741906696401" duration="7311000" />
+      <workItem from="1741921260764" duration="1113000" />
+      <workItem from="1741958287889" duration="2082000" />
+    </task>
+    <task id="LOCAL-00001" summary="Crear proyecto movil">
+      <option name="closed" value="true" />
+      <created>1741740584238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741740584238</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Archivo app.routes update">
+      <option name="closed" value="true" />
+      <created>1741898562467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741898562467</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Archivo imagenes">
+      <option name="closed" value="true" />
+      <created>1741899992951</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741899992951</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Meditime movil">
+      <option name="closed" value="true" />
+      <created>1741920759940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741920759940</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Meditime movil">
+      <option name="closed" value="true" />
+      <created>1741921614207</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741921614207</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Meditime movil">
+      <option name="closed" value="true" />
+      <created>1741921629123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741921629123</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ajustes finales movil">
+      <option name="closed" value="true" />
+      <created>1741959906882</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741959906882</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ajustes finales movil modal confirmar">
+      <option name="closed" value="true" />
+      <created>1741960228140</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741960228140</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/meditime-movil" />
+    </ignored-roots>
+    <MESSAGE value="Crear proyecto movil" />
+    <MESSAGE value="Archivo app.routes update" />
+    <MESSAGE value="Archivo imagenes" />
+    <MESSAGE value="Ajustes finales movil" />
+    <MESSAGE value="Meditime movil" />
+    <MESSAGE value="Ajustes finales movil modal confirmar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes finales movil modal confirmar" />
+  </component>
+</project>

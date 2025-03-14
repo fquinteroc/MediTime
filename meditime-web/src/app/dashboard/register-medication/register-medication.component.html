@@ -1,0 +1,47 @@
+<div class="register-medication-wrapper">
+  <aside class="sidebar">
+    <h2>Cuidador</h2>
+    <nav>
+      <button class="nav-item active">
+        <i class="fas fa-users icon"></i> Pacientes
+      </button>
+      <button class="nav-item">
+        <i class="fas fa-file-alt icon"></i> Informes Pacientes
+      </button>
+    </nav>
+
+    <button class="logout-btn" (click)="cancel()">
+      <i class="fas fa-sign-out-alt icon"></i> Cerrar Sesión
+    </button>
+  </aside>
+
+  <div class="content">
+    <div class="form-header">
+      <h1>Registrar Medicamentos: <span class="patient-name">José Ramírez</span></h1>
+    </div>
+
+    <form [formGroup]="medicationForm" (ngSubmit)="submitForm()" class="medication-form">
+      <input type="text" formControlName="medicationName" placeholder="Nombre Medicamento" />
+      <input type="text" formControlName="concentration" placeholder="Concentración/Presentación" />
+      <input type="text" formControlName="dose" placeholder="Dosis a Administración" />
+
+      <div class="input-wrapper">
+        <input type="date" formControlName="startDate" id="startDate" required />
+        <label for="startDate">Fecha Inicio Tratamiento</label>
+      </div>
+
+      <div class="input-wrapper">
+        <input type="date" formControlName="endDate" id="endDate" required />
+        <label for="endDate">Fecha Fin Tratamiento</label>
+      </div>
+
+      <input type="text" formControlName="frequency" placeholder="Horas de Toma" />
+      <input type="text" formControlName="administrationRoute" placeholder="Vía Administración" />
+
+      <div class="form-actions">
+        <button type="submit" class="primary-btn"  (click)="save()">Guardar</button>
+        <button type="button" class="cancel-btn" (click)="cancel()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

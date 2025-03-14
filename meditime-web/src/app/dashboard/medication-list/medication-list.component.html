@@ -1,0 +1,64 @@
+<div class="medication-list-wrapper">
+  <aside class="sidebar">
+    <h2>Cuidador</h2>
+    <nav>
+      <button class="nav-item active">
+        <i class="fas fa-users icon"></i> Pacientes
+      </button>
+      <button class="nav-item">
+        <i class="fas fa-file-alt icon"></i> Informes Pacientes
+      </button>
+    </nav>
+
+    <button class="logout-btn" (click)="logout()">
+      <i class="fas fa-sign-out-alt icon"></i> Cerrar Sesión
+    </button>
+  </aside>
+
+  <div class="content">
+    <div class="medication-header">
+      <h1>Listado Medicamentos <span class="patient-name">{{ patientName }}</span></h1>
+    </div>
+
+    <table class="medication-table">
+      <thead>
+      <tr>
+        <th>Medicamento</th>
+        <th>Dosis</th>
+        <th>Fecha Inicio</th>
+        <th>Fecha Fin</th>
+        <th>Frecuencia</th>
+        <th>Uso</th>
+        <th>Estado</th>
+        <th>Acción</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let medication of medications">
+        <td>{{ medication.name }}</td>
+        <td>{{ medication.dose }}</td>
+        <td>{{ medication.startDate }}</td>
+        <td>{{ medication.endDate }}</td>
+        <td>{{ medication.frequency }}</td>
+        <td>{{ medication.use }}</td>
+        <td>
+          <span class="status">{{ medication.status }}</span>
+        </td>
+        <td class="actions">
+          <button class="edit-btn" (click)="editMedication(medication)">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button class="delete-btn" (click)="deleteMedication(medication)">
+            <i class="fas fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <div class="action-buttons">
+      <button class="back-btn" (click)="goBack()">Volver</button>
+      <button class="primary-btn" (click)="registerMedication()">Registrar Medicamentos Paciente</button>
+    </div>
+  </div>
+</div>

@@ -59,7 +59,7 @@ export class PatientsListComponent implements OnInit {
   }
 
   viewPatient(patient: Patient) {
-    console.log('Ver detalles del paciente:', patient);
+    this.router.navigate(['/patient-detail']);
     // Lógica para ver detalles (pendiente de implementación)
   }
 

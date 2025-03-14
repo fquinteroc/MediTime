@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-account',
@@ -10,6 +11,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./new-account.component.css']
 })
 export class NewAccountComponent {
+
+  constructor(private router: Router) {}
+
   email: string = '';
   fullName: string = '';
   phone: string = '';
@@ -47,10 +51,12 @@ export class NewAccountComponent {
       phone: this.phone,
       password: this.password
     });
+    this.router.navigate(['/patients-list']);
   }
 
   login() {
     console.log('Redirigiendo a la página de inicio de sesión...');
+    this.router.navigate(['/']);
     // Simulación de navegación a la página de inicio de sesión
   }
 }
