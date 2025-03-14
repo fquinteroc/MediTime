@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="502f45b9-8ed9-4fa5-977e-90ce06aab126" name="Changes" comment="Archivo imagenes">
-      <change afterPath="$PROJECT_DIR$/meditime-movil/eas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="502f45b9-8ed9-4fa5-977e-90ce06aab126" name="Changes" comment="Meditime movil">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/Checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/Checkbox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/History.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/History.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/LineHistory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/LineHistory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/Options.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/Options.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/Reminder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/Reminder.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/Reports.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/Reports.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/Settings.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/components/TabNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/TabNavigator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/modals/ConfirmReminderModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/modals/ConfirmReminderModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/modals/ForgotPasswordModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/modals/ForgotPasswordModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/modals/RingtoneModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/modals/RingtoneModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/modals/VibrationModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/modals/VibrationModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meditime-movil/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +18,14 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/meditime-movil" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2uC1xXDG1d39T2gLNphgVcS2vtD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +34,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/dannamilenacoral/Desktop/MAESTRIA UNIANDES/UX/MediTime",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,7 +43,7 @@
     "nodejs_interpreter_path": "/Users/dannamilenacoral/Library/Application Support/JetBrains/WebStorm2024.3/node/versions/20.19.0/bin/node",
     "nodejs_package_manager_path": "npm",
     "npm.ios.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "ts.external.directory.path": "/Users/dannamilenacoral/Desktop/MAESTRIA UNIANDES/UX/MediTime/meditime-movil/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -109,7 +91,8 @@
       <workItem from="1741871421219" duration="1360000" />
       <workItem from="1741873370744" duration="2994000" />
       <workItem from="1741895343165" duration="3463000" />
-      <workItem from="1741906696401" duration="6702000" />
+      <workItem from="1741906696401" duration="7311000" />
+      <workItem from="1741921260764" duration="295000" />
     </task>
     <task id="LOCAL-00001" summary="Crear proyecto movil">
       <option name="closed" value="true" />
@@ -135,16 +118,28 @@
       <option name="project" value="LOCAL" />
       <updated>1741899992951</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Meditime movil">
+      <option name="closed" value="true" />
+      <created>1741920759940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741920759940</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/meditime-movil" />
+    </ignored-roots>
     <MESSAGE value="Crear proyecto movil" />
     <MESSAGE value="Archivo app.routes update" />
     <MESSAGE value="Archivo imagenes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Archivo imagenes" />
+    <MESSAGE value="Meditime movil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meditime movil" />
   </component>
 </project>
