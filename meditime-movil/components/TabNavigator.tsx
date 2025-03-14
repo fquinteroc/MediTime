@@ -2,8 +2,9 @@ import {Pressable, Text, View} from "react-native";
 import {CalendarClock, ChartArea, NotebookText, Settings} from "lucide-react-native";
 import {useNavigation} from '@react-navigation/native';
 import {useSafeAreaInsets} from "react-native-safe-area-context";
+import React from "react";
 
-export function TabNavigator() {
+function TabNavigator() {
     const navigation = useNavigation();
     const insets = useSafeAreaInsets();
 
@@ -40,3 +41,5 @@ export function TabNavigator() {
         </View>
     )
 }
+
+export default React.memo(TabNavigator);

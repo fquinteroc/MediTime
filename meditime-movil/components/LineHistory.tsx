@@ -1,6 +1,6 @@
 import {Pressable, Text, View} from "react-native";
 import {ChevronDown} from "lucide-react-native";
-import {useState} from "react";
+import React, {useState} from "react";
 
 type Props = {
     day: string,
@@ -8,7 +8,7 @@ type Props = {
     isOpen?: boolean,
 }
 
-export function LineHistory({day, date, isOpen = false}: Props) {
+function LineHistory({day, date, isOpen = false}: Props) {
     const [open, setOpen] = useState<boolean>(isOpen);
 
     return (
@@ -77,3 +77,5 @@ export function Line({medicare, time, state}: LineProps) {
         </View>
     )
 }
+
+export default React.memo(LineHistory);

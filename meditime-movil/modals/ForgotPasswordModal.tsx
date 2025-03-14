@@ -1,13 +1,14 @@
 import { Button, Modal, Pressable, Text, View } from 'react-native';
 import { X } from 'lucide-react-native';
-import { Checkbox } from '../components/Checkbox';
+import Checkbox from '../components/Checkbox';
+import React from "react";
 
 type Props = {
   isOpen: boolean;
   onClose: () => void;
 };
 
-export function ForgotPasswordModal({ isOpen, onClose }: Props) {
+function ForgotPasswordModal({ isOpen, onClose }: Props) {
   return (
       <Modal animationType="slide" transparent={true} visible={isOpen} onRequestClose={onClose}>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -52,3 +53,5 @@ export function ForgotPasswordModal({ isOpen, onClose }: Props) {
       </Modal>
   );
 }
+
+export default React.memo(ForgotPasswordModal);

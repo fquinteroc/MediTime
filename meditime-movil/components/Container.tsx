@@ -1,6 +1,7 @@
 import {ImageBackground, SafeAreaView} from 'react-native';
+import React from "react";
 
-export const Container = ({children}: { children: React.ReactNode }) => {
+const Container = ({children}: { children: React.ReactNode }) => {
     return (
         <SafeAreaView className={styles.container}>
             <ImageBackground
@@ -16,3 +17,5 @@ export const Container = ({children}: { children: React.ReactNode }) => {
 const styles = {
     container: 'relative flex flex-1 p-safe',
 };
+
+export default React.memo(Container);

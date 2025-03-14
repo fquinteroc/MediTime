@@ -1,5 +1,6 @@
 import { Button, Modal, Pressable, Text, View } from 'react-native';
 import { X } from 'lucide-react-native';
+import React from "react";
 
 type Props = {
   isOpen: boolean;
@@ -7,7 +8,7 @@ type Props = {
   onConfirm?: () => void;
 };
 
-export function ConfirmReminderModal({ isOpen, onConfirm, onClose }: Props) {
+function ConfirmReminderModal({ isOpen, onConfirm, onClose }: Props) {
   return (
       <Modal animationType="slide" transparent={true} visible={isOpen} onRequestClose={onClose}>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -71,3 +72,5 @@ export function ConfirmReminderModal({ isOpen, onConfirm, onClose }: Props) {
       </Modal>
   );
 }
+
+export default React.memo(ConfirmReminderModal);

@@ -1,12 +1,12 @@
-import {Container} from "./Container";
+import Container from "./Container";
 import {Text, View} from "react-native";
-import {TabNavigator} from "./TabNavigator";
-import {Options} from "./Options";
-import {RingtoneModal} from "../modals/RingtoneModal";
-import {useEffect, useState} from "react";
-import {VibrationModel} from "../modals/VibrationModal";
+import TabNavigator from "./TabNavigator";
+import Options from "./Options";
+import RingtoneModal from "../modals/RingtoneModal";
+import React, {useEffect, useState} from "react";
+import VibrationModel from "../modals/VibrationModal";
 
-export function Settings() {
+function Settings() {
     const [checkRingtone, setCheckRingtone] = useState(false);
     const [checkVibration, setCheckVibration] = useState(false);
     const [checkNotification, setCheckNotification] = useState(false);
@@ -58,3 +58,5 @@ const styles = {
     separator: `h-[1px] my-7 w-4/5 bg-gray-200 mx-auto`,
     title: `text-2xl font-bold mt-8 text-center`,
 };
+
+export default React.memo(Settings);

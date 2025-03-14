@@ -1,4 +1,5 @@
 import {Switch, Text, View} from "react-native";
+import React from "react";
 
 type Props = {
     title: string,
@@ -6,7 +7,7 @@ type Props = {
     onValueChange?: (checked: boolean) => void,
 }
 
-export function Options({title, checked, onValueChange}: Props) {
+function Options({title, checked, onValueChange}: Props) {
     return (
         <View className="flex flex-row items-center gap-8 bg-zinc-50 rounded-md border border-zinc-200 px-4">
             <View className="flex-1">
@@ -18,3 +19,5 @@ export function Options({title, checked, onValueChange}: Props) {
         </View>
     )
 }
+
+export default React.memo(Options);

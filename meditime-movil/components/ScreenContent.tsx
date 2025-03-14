@@ -1,11 +1,10 @@
 import {Text, View} from 'react-native';
-import {Container} from "./Container";
-import {TabNavigator} from "./TabNavigator";
-import {Reminder} from "./Reminder";
-import {ConfirmReminderModal} from "../modals/ConfirmReminderModal";
-import {useState} from "react";
+import Container from "./Container";
+import TabNavigator from "./TabNavigator";
+import Reminder from "./Reminder";
+import React, {useState} from "react";
 
-export const ScreenContent = () => {
+const ScreenContent = () => {
     const [showModal, setShowModal] = useState(false);
 
     return (
@@ -51,3 +50,5 @@ const styles = {
     separator: `h-[1px] my-7 w-4/5 bg-gray-200 mx-auto`,
     title: `text-2xl font-bold mt-8 text-center`,
 };
+
+export default React.memo(ScreenContent);

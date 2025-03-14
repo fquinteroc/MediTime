@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {Pressable, Text, View} from "react-native";
 import {CheckIcon} from "lucide-react-native";
 
@@ -6,7 +6,7 @@ type Props = {
     children: React.ReactNode
 }
 
-export function Checkbox({children}: Props) {
+function Checkbox({children}: Props) {
     const [checked, setChecked] = useState(false);
 
     return (
@@ -29,3 +29,5 @@ export function Checkbox({children}: Props) {
         </Pressable>
     );
 }
+
+export default React.memo(Checkbox);

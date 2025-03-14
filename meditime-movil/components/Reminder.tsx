@@ -1,6 +1,6 @@
 import { Button, Text, View } from 'react-native';
-import { useState } from 'react';
-import { ConfirmReminderModal } from '../modals/ConfirmReminderModal';
+import React, { useState } from 'react';
+import ConfirmReminderModal from '../modals/ConfirmReminderModal';
 
 type Props = {
   title: string;
@@ -10,7 +10,7 @@ type Props = {
   disabled?: boolean;
 };
 
-export function Reminder({ title, reminder, withConfirm, onPress, disabled }: Props) {
+function Reminder({ title, reminder, withConfirm, onPress, disabled }: Props) {
   const [showModal, setShowModal] = useState(false);
   const [isConfirm, setIsConfirm] = useState<boolean>(false);
 
@@ -48,3 +48,5 @@ export function Reminder({ title, reminder, withConfirm, onPress, disabled }: Pr
     </>
   );
 }
+
+export default React.memo(Reminder);

@@ -1,8 +1,9 @@
-import {Container} from "./Container";
+import Container from "./Container";
 import {Image, Text, View} from "react-native";
-import {TabNavigator} from "./TabNavigator";
+import TabNavigator from "./TabNavigator";
+import React from "react";
 
-export function Reports() {
+function Reports() {
     return (
         <Container>
             <View className="px-4">
@@ -30,3 +31,5 @@ const styles = {
     separator: `h-[1px] my-7 w-4/5 bg-gray-200 mx-auto`,
     title: `text-2xl font-bold mt-8 text-center`,
 };
+
+export default React.memo(Reports);

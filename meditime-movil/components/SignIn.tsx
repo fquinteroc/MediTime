@@ -1,10 +1,10 @@
-import {Container} from "./Container";
+import Container from "./Container";
 import {Button, Text, TextInput, View} from "react-native";
-import {useState} from "react";
+import React, {useState} from "react";
 import {useNavigation} from "@react-navigation/native";
-import {ForgotPasswordModal} from "../modals/ForgotPasswordModal";
+import ForgotPasswordModal from "../modals/ForgotPasswordModal";
 
-export function SignIn() {
+function SignIn() {
     const navigator = useNavigation();
     const [showInput, setShowInput] = useState<boolean>(false);
     const [showForgotPassword, setShowForgotPassword] = useState<boolean>(false);
@@ -40,4 +40,6 @@ export function SignIn() {
         </Container>
     );
 }
+
+export default React.memo(SignIn);
 

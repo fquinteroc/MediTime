@@ -1,14 +1,15 @@
 import { Button, Modal, Pressable, Text, View } from "react-native";
 import { X } from "lucide-react-native";
-import { Checkbox } from "../components/Checkbox";
+import Checkbox from "../components/Checkbox";
 import Slider from "@react-native-community/slider";
+import React from "react";
 
 type Props = {
     isOpen: boolean,
     onClose: () => void,
 }
 
-export function VibrationModel({ isOpen, onClose }: Props) {
+function VibrationModel({ isOpen, onClose }: Props) {
     return (
         <Modal
             animationType="slide"
@@ -75,3 +76,5 @@ export function VibrationModel({ isOpen, onClose }: Props) {
         </Modal>
     )
 }
+
+export default React.memo(VibrationModel);

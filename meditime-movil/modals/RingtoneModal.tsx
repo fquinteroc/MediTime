@@ -1,13 +1,14 @@
 import { Button, Modal, Pressable, Text, View } from "react-native";
 import { X } from "lucide-react-native";
-import { Checkbox } from "../components/Checkbox";
+import Checkbox from "../components/Checkbox";
+import React from "react";
 
 type Props = {
     isOpen: boolean,
     onClose: () => void,
 }
 
-export function RingtoneModal({ isOpen, onClose }: Props) {
+function RingtoneModal({ isOpen, onClose }: Props) {
     return (
         <Modal
             animationType="slide"
@@ -75,3 +76,5 @@ export function RingtoneModal({ isOpen, onClose }: Props) {
         </Modal>
     )
 }
+
+export default React.memo(RingtoneModal);
