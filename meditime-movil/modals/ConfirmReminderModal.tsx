@@ -9,32 +9,65 @@ type Props = {
 
 export function ConfirmReminderModal({ isOpen, onConfirm, onClose }: Props) {
   return (
-    <Modal animationType="slide" transparent={true} visible={isOpen} onRequestClose={onClose}>
-      <View className="flex-1 items-center justify-center">
-        <View className="relative w-9/12 gap-4 rounded bg-white p-12 shadow-md">
-          <Pressable className="absolute right-5 top-5" onPress={onClose}>
-            <X size={16} color="black" />
-          </Pressable>
-          <Text>Tomaste tu medicación de:</Text>
-          <Text className="text-center text-lg font-bold">Aspirina</Text>
-
-          <View className="flex-row gap-4">
-            <View className="flex-1">
-              <Button
-                onPress={() => {
-                  onConfirm?.();
-                  onClose();
+      <Modal animationType="slide" transparent={true} visible={isOpen} onRequestClose={onClose}>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+          <View
+              style={{
+                position: 'relative',
+                backgroundColor: 'white',
+                padding: 24,
+                width: '75%',
+                borderRadius: 8,
+                shadowColor: '#000',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.25,
+                shadowRadius: 4,
+                gap: 16,
+              }}
+          >
+            <Pressable
+                onPress={onClose}
+                style={{
+                  position: 'absolute',
+                  top: 20,
+                  right: 20,
                 }}
-                color="green"
-                title="Si"
-              />
-            </View>
-            <View className="flex-1">
-              <Button onPress={onClose} color="gray" title="No" />
+            >
+              <X size={16} color="black" />
+            </Pressable>
+            <Text>Tomaste tu medicación de:</Text>
+            <Text
+                style={{
+                  textAlign: 'center',
+                  fontSize: 18,
+                  fontWeight: 'bold',
+                }}
+            >
+              Aspirina
+            </Text>
+
+            <View
+                style={{
+                  flexDirection: 'row',
+                  gap: 16,
+                }}
+            >
+              <View style={{ flex: 1 }}>
+                <Button
+                    onPress={() => {
+                      onConfirm?.();
+                      onClose();
+                    }}
+                    color="green"
+                    title="Si"
+                />
+              </View>
+              <View style={{ flex: 1 }}>
+                <Button onPress={onClose} color="gray" title="No" />
+              </View>
             </View>
           </View>
         </View>
-      </View>
-    </Modal>
+      </Modal>
   );
 }
