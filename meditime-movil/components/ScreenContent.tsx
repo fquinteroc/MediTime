@@ -15,10 +15,29 @@ export const ScreenContent = () => {
                 <View className={styles.separator}/>
 
                 <View className="gap-4">
-                    <Reminder title="Salbutamol"/>
-                    <Reminder title="Aspirina" withConfirm onPress={() => setShowModal(true)}/>
-                    <Reminder title="Amoxil" withConfirm onPress={() => setShowModal(true)} disabled/>
-                    <Reminder title="Xanax" withConfirm onPress={() => setShowModal(true)} disabled/>
+                    <Reminder
+                        title="Salbutamol"
+                        reminder="6:00am"
+                    />
+                    <Reminder
+                        title="Aspirina"
+                        reminder="Ahora 10:00am"
+                        withConfirm
+                        onPress={() => setShowModal(true)}/>
+                    <Reminder
+                        title="Metronidazol"
+                        reminder="Próxima 2:00pm"
+                        withConfirm
+                        onPress={() => setShowModal(true)}
+                        disabled
+                    />
+                    <Reminder
+                        title="Amoxil"
+                        reminder="Próxima 8:00pm"
+                        withConfirm
+                        onPress={() => setShowModal(true)}
+                        disabled
+                    />
                 </View>
             </View>
             <TabNavigator/>

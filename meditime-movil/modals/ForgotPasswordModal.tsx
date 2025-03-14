@@ -30,7 +30,7 @@ export function ForgotPasswordModal({isOpen, onClose}: Props) {
                         </Checkbox>
                     </View>
 
-                    <Button color="green" title="Ok"/>
+                    <Button onPress={onClose} color="green" title="Ok"/>
                 </View>
             </View>
         </Modal>

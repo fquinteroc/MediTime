@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="502f45b9-8ed9-4fa5-977e-90ce06aab126" name="Changes" comment="Meditime movil">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meditime-movil/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meditime-movil/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/package.json" afterDir="false" />
+    </list>
+    <list id="42d05178-39fa-4859-bf0c-d36e2f0bebef" name="Changes by Saturno" comment="">
+      <change beforePath="$PROJECT_DIR$/meditime-movil/components/Reminder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/Reminder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meditime-movil/components/ScreenContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/ScreenContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meditime-movil/components/TabNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/meditime-movil/components/TabNavigator.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +50,7 @@
     "nodejs_interpreter_path": "/Users/dannamilenacoral/Library/Application Support/JetBrains/WebStorm2024.3/node/versions/20.19.0/bin/node",
     "nodejs_package_manager_path": "npm",
     "npm.ios.executor": "Run",
+    "npm.start.executor": "Run",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "ts.external.directory.path": "/Users/dannamilenacoral/Desktop/MAESTRIA UNIANDES/UX/MediTime/meditime-movil/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -50,10 +58,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/meditime-movil" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="ios" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/meditime-movil/package.json" />
       <command value="run" />
@@ -64,8 +73,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/meditime-movil/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.ios" />
       </list>
     </recent_temporary>
@@ -92,7 +112,8 @@
       <workItem from="1741873370744" duration="2994000" />
       <workItem from="1741895343165" duration="3463000" />
       <workItem from="1741906696401" duration="7311000" />
-      <workItem from="1741921260764" duration="295000" />
+      <workItem from="1741921260764" duration="1113000" />
+      <workItem from="1741958287889" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Crear proyecto movil">
       <option name="closed" value="true" />
@@ -126,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741920759940</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Meditime movil">
+      <option name="closed" value="true" />
+      <created>1741921614207</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741921614207</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Meditime movil">
+      <option name="closed" value="true" />
+      <created>1741921629123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741921629123</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
