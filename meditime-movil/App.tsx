@@ -4,17 +4,17 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { History } from './components/History';
-import { Reports } from './components/Reports';
-import { ScreenContent } from './components/ScreenContent';
-import { Settings } from './components/Settings';
-import { SignIn } from './components/SignIn';
+import History from './components/History';
+import Reports from './components/Reports';
+import ScreenContent from './components/ScreenContent';
+import Settings from './components/Settings';
+import SignIn from './components/SignIn';
 
 import './global.css';
 
 const Stack = createNativeStackNavigator();
 
-export default function App() {
+function App() {
     return (
         <SafeAreaProvider>
             <NavigationContainer>
@@ -50,3 +50,5 @@ export default function App() {
         </SafeAreaProvider>
     );
 }
+
+export default React.memo(App);
