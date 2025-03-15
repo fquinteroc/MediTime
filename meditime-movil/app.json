@@ -24,11 +24,15 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+
     "assetBundlePatterns": ["**/*"],
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
+      "package": "com.mycompany.myexpoapp", 
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
